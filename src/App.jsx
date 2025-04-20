@@ -54,21 +54,21 @@ export default function App() {
   const card = cards[currentIndex];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center justify-center">
-      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-xl text-center">
-        <h2 className="text-2xl font-bold text-indigo-600 mb-4">{card.name}</h2>
+    <div className="min-h-screen bg-gray-600 p-6 flex flex-col items-center justify-center">
+      <div className="bg-white font-mono shadow-md rounded-lg p-6 w-full max-w-xl text-center">
+        <h2 className="text-2xl font-bold text-black mb-4">{card.name}</h2>
         <div className="text-gray-700 mb-6 whitespace-pre-line leading-relaxed">
           {card.desc || "No description available."}
         </div>
         <div className="flex justify-center gap-4 flex-wrap">
           <button onClick={prevCard} className="bg-gray-300 hover:bg-gray-400 text-black font-semibold py-2 px-4 rounded">
-            ⏪ Prev
+            ＜ Prev
           </button>
           <button onClick={moveToDone} className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-            ✅ Move to Done
+            ✓ Move to Done
           </button>
           <button onClick={nextCard} className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded">
-            Next ⏩
+            Next ＞
           </button>
         </div>
       </div>
