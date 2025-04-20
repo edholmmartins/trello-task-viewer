@@ -7,7 +7,8 @@ A simple React + TailwindCSS app that fetches and displays Trello cards one-by-o
 1. Replace the placeholder values in `App.jsx`:
    - `API_KEY`
    - `TOKEN`
-   - `LIST_ID`
+   - `TODO_LIST_ID`
+   - `DONE_LIST_ID`
 
 2. Install dependencies:
 ```bash
@@ -26,7 +27,8 @@ npm run dev
 ```bash
 git init
 git add .
-git commit -m "initial commit"
+git commit -m "Initial commit"
+git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
 ```
